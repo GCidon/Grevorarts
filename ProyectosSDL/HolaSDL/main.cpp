@@ -4,6 +4,7 @@
 #include "checkML.h"
 #include <iostream>
 #include "Character.h"
+#include "Hero.h"
 #include "CombatManager.h"
 
 using namespace std;
@@ -32,8 +33,8 @@ void firstTest() {
 	SDL_DestroyWindow(window);
 	SDL_Quit();*/
 
-	Character* hero = new Character("Tordo", 10, 2, 3);
-	Character* monster = new Character("Goblin", 5, 1, 2);
+	Hero* hero = new Hero("Tordo", 2);
+	Character* monster = new Character("Goblin", 10, 2, 2);
 
 	CombatManager cm(hero, monster);
 
